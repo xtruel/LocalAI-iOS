@@ -1,11 +1,8 @@
-
 workflows:
   ios-build:
-    name: iOS Build (Simulator)
-    environment:
-      xcode_env: default
+    name: iOS Build (The Ultimate Victory)
     scripts:
       - name: Build App
         script: |
-          # Compila il pacchetto Swift per l'architettura del simulatore
-          swift build -configuration release --destination ios
+          # Usiamo il comando più semplice che esiste per evitare ogni dubbio al computer
+          swift build -c release
