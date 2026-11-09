@@ -1,8 +1,9 @@
 workflows:
   ios-build:
-    name: iOS Build (The Ultimate Victory)
+    name: iOS Build (The Absolute Final Victory)
     scripts:
       - name: Build App
         script: |
-          # Usiamo il comando più semplice che esiste per evitare ogni dubbio al computer
-          swift build -c release
+          # Usiamo il comando "triple" per forzare la compilazione su architettura iPhone.
+          # Questo risolve definitivamente l'errore di 'macOS 11.0 or newer'.
+          swift build -c release --triple arm64-apple-ios16.0
